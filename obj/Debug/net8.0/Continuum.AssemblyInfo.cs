@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Continuum")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+108d0b2f7105e4d2e4d46bed0178801bd6e243b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+459108a4c5fc4c8df9e03cdd6914fd86503f0424")]
 [assembly: System.Reflection.AssemblyProductAttribute("Continuum")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Continuum")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

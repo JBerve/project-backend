@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yyLCF0EAE6cibhKwIdX6X3Yt+HJFfNdlOPypO8spZ5Y/F6NbD09PsGcJu94Esn1WZx7JRgowYcc1uT41XRDkZQ==",
+  "dgSpecHash": "Sh+YTVr1BjnN02H664JLGKXF1nnt4qC1A6obUL5slHhj5eHL3FtGmI3gB0rwPMZCGz6QIY6Bxjh9y8XJfuHa3A==",
   "success": true,
   "projectFilePath": "/Users/juanberve/Desktop/WebBusiness/Continuum/Continuum/Continuum.csproj",
   "expectedPackageFiles": [
@@ -118,10 +118,7 @@
     "/Users/juanberve/.nuget/packages/system.threading.tasks.extensions/4.3.0/system.threading.tasks.extensions.4.3.0.nupkg.sha512",
     "/Users/juanberve/.nuget/packages/system.threading.timer/4.3.0/system.threading.timer.4.3.0.nupkg.sha512",
     "/Users/juanberve/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "/Users/juanberve/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
-    "/Users/juanberve/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "/Users/juanberve/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
-    "/Users/juanberve/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.20/microsoft.netcore.app.host.osx-arm64.7.0.20.nupkg.sha512"
+    "/Users/juanberve/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

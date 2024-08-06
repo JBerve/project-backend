@@ -1,0 +1,12 @@
+2024-08-06 18:06:15.846 -03:00 [INF] Starting web host
+2024-08-06 18:06:16.808 -03:00 [WRN] The WebRootPath was not found: /Users/juanberve/Desktop/WebBusiness/Continuum/Continuum/wwwroot. Static files may be unavailable.
+2024-08-06 18:06:17.653 -03:00 [INF] Now listening on: https://localhost:7069
+2024-08-06 18:06:17.654 -03:00 [INF] Now listening on: http://localhost:5124
+2024-08-06 18:06:17.657 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-06 18:06:17.657 -03:00 [INF] Hosting environment: Development
+2024-08-06 18:06:17.658 -03:00 [INF] Content root path: /Users/juanberve/Desktop/WebBusiness/Continuum/Continuum
+2024-08-06 18:06:19.015 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7069/ - null null
+2024-08-06 18:06:19.051 -03:00 [INF] HTTP GET / responded 404 in 1.4081 ms
+2024-08-06 18:06:19.055 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7069/ - 404 0 null 44.508ms
+2024-08-06 18:06:19.061 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7069/, Response status code: 404
+2024-08-06 18:06:24.902 -03:00 [INF] Application is shutting down...
