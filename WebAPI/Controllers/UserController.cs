@@ -1,5 +1,5 @@
+using Continuum.Application.Interfaces;
 using Continuum.Core.Entities;
-using Continuum.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Continuum.WebAPI.Controllers
@@ -8,9 +8,9 @@ namespace Continuum.WebAPI.Controllers
     [Route("api/[controller]")]
     public class UsersController : ControllerBase
     {
-        private readonly UserService _userService;
+        private readonly IUserService _userService;
 
-        public UsersController(UserService userService)
+        public UsersController(IUserService userService)
         {
             _userService = userService;
         }
@@ -39,6 +39,38 @@ namespace Continuum.WebAPI.Controllers
             await _userService.AddUserAsync(user);
             return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, user);
         }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateUser(Guid id, User user)
+        {
+            if (id != user.Id)
+            {
+                return BadRequest();
+            }
+
+            try
+            {
+                await _userService.UpdateUserAsync(user);
+                return NoContent(); 
+            }
+            catch (Exception ex)
+            {
+                return NotFound();
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteUser(Guid id)
+        {
+            try
+            {
+                await _userService.DeleteUserAsync(id);
+                return NoContent(); // 204 No Content
+            }
+            catch (Exception ex)
+            {
+                return NotFound(); // 404 Not Found
+            }
+        }
     }
 }
-
