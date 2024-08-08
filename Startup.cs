@@ -36,6 +36,10 @@ namespace Continuum
             
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepository, UserRepository>();
+            
+            services.AddScoped<IClientService, ClientService>();
+            services.AddScoped<IClientRepository, ClientRepository>();
+            
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             services.AddControllers();
