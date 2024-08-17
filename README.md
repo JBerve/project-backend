@@ -6,25 +6,35 @@ This is a platform designed to allow clients to create and manage their own webs
 
 ## Project Structure
 Continuum/
-│
+
 ├── Continuum.Core/              # Core domain models and interfaces
+
 │   ├── Entities/                # Entity classes (User, Client, Configuration, etc.)
+
 │   ├── Interfaces/              # Repository and service interfaces
-│
+
 ├── Continuum.Application/       # Business logic and validation
+
 │   ├── Interfaces/              # Service interfaces
+
 │   ├── Services/                # Service implementations
+
 │   ├── Validators/              # FluentValidation classes
-│
+
 ├── Continuum.Infrastructure/    # Data access and repository implementations
+
 │   ├── Data/                    # DbContext and migrations
+
 │   ├── Repositories/            # Repository implementations
-│
+
 ├── Continuum.WebAPI/            # ASP.NET Core Web API project
+
 │   ├── Controllers/             # API controllers
+
 │   ├── DTOs/                    # Data Transfer Objects
+
 │   ├── Startup.cs               # Configuration and services setup
-│
+
 └── README.md                    # This documentation file
 
 Architecture
