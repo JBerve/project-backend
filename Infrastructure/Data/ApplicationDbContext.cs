@@ -16,7 +16,7 @@ namespace Continuum.Infrastructure.Data
         public DbSet<ContentBlock> ContentBlocks { get; set; }
         public DbSet<Page> Pages { get; set; }
         public DbSet<MediaContent> MediaContents { get; set; }
-        public DbSet<SocialMedia> SocialMedias { get; set; }
+        public DbSet<SocialMedia> SocialMedia { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -48,6 +48,31 @@ namespace Continuum.Infrastructure.Data
             modelBuilder.Entity<Client>()
                 .HasMany(c => c.SocialMedias)
                 .WithOne(sm => sm.Client)
+                .HasForeignKey(sm => sm.ClientId);
+            
+            modelBuilder.Entity<Configuration>()
+                .HasOne(c => c.Client)
+                .WithOne(c => c.Configuration)
+                .HasForeignKey<Configuration>(c => c.ClientId);
+            
+            modelBuilder.Entity<ContentBlock>()
+                .HasOne(cb => cb.Client)
+                .WithMany(c => c.ContentBlocks)
+                .HasForeignKey(cb => cb.ClientId);
+            
+            modelBuilder.Entity<MediaContent>()
+                .HasOne(mc => mc.Client)
+                .WithMany(c => c.MediaContents)
+                .HasForeignKey(mc => mc.ClientId);
+            
+            modelBuilder.Entity<Page>()
+                .HasOne(p => p.Client)
+                .WithMany(c => c.Pages)
+                .HasForeignKey(p => p.ClientId);
+            
+            modelBuilder.Entity<SocialMedia>()
+                .HasOne(sm => sm.Client)
+                .WithMany(c => c.SocialMedias)
                 .HasForeignKey(sm => sm.ClientId);
         }
     }
